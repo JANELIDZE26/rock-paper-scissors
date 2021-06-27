@@ -1,0 +1,43 @@
+.option {
+  border-radius: 100%;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 -6px rgba(black, 0.15);
+  cursor: pointer;
+
+  .image {
+    width: 11rem;
+    height: 11rem;
+    background: white;
+    border-radius: 100%;
+    box-shadow: inset 0 6px rgba(black, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.paper {
+    background: linear-gradient(
+      to bottom,
+      $paper-linear-dark,
+      $paper-linear-light
+    );
+  }
+  &.scissors {
+    background: linear-gradient(
+      to bottom,
+      $scissors-linear-light,
+      $scissors-linear-dark
+    );
+  }
+  &.rock {
+    background: linear-gradient(
+      to bottom,
+      $rock-gradient-light,
+      $rock-gradient-dark
+    );
+  }
+}

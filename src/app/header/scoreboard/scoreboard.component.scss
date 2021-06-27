@@ -1,0 +1,47 @@
+@import "../../../styles/abstract/variables";
+
+.scoreboard {
+  border: 3px solid $header-outline;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+
+  .game-title {
+    width: 30%;
+    padding: 1rem 0;
+    img {
+      width: 100%;
+    }
+  }
+
+  .score {
+    background: white;
+    width: 25%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    .score-label {
+      color: $score-text;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    .score {
+      font-size: 2.5rem;
+      color: $header-outline;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    width: 50%;
+  }
+}

@@ -1,0 +1,46 @@
+@keyframes movePaper {
+  from {
+    transform: translate(50%, 50%);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveScissors {
+  from {
+    transform: translate(-63%, 50%);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes moveRock {
+  from {
+    transform: translate(-7%, -64%) scale(1.03);
+  }
+  to {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes scaleAfter {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleOption {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}

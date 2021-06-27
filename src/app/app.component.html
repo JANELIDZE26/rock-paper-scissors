@@ -1,0 +1,10 @@
+<div class="app">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <router-outlet name="rules"></router-outlet>
+  <div class="rules">
+    <a [routerLink]="[{ outlets: { rules: ['rules'] } }]" class="rules-link"
+      >Rules</a
+    >
+  </div>
+</div>

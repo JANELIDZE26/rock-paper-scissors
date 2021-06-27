@@ -1,0 +1,43 @@
+@import "src/styles/abstract/variables";
+
+.app {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(
+    to bottom,
+    $background-linear-light 50%,
+    $background-linear-dark 90%
+  );
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .rules {
+    text-decoration: none;
+    text-align: center;
+    margin-top: auto;
+    border: 2px solid white;
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+
+    transition: all .3s;
+
+    &:hover {
+      background: white;
+      cursor: pointer;
+      a {
+        color: $background-linear-dark;
+      }
+    }
+
+    a {
+      font-size: 2.5rem;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

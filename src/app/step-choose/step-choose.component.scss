@@ -1,0 +1,61 @@
+@import "src/styles/abstract/variables";
+@import "src/styles/abstract/animations";
+@import "src/styles/abstract/mixins";
+
+.container {
+
+  margin: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+  z-index: 10;
+  transition: all .4s;
+
+  @media(min-width: 490px) {
+    width: 99%;
+    margin: 8rem auto;
+  }
+
+  @media (min-width: 320px) {
+    .paper {
+      position: relative;
+
+      @include centerAnimation(movePaper);
+      @include scaleAfter {
+        background: linear-gradient(
+          to bottom,
+          $paper-linear-dark,
+          $paper-linear-light
+        );
+      }
+    }
+
+    .scissors {
+      position: relative;
+      @include centerAnimation(moveScissors);
+      @include scaleAfter {
+        background: linear-gradient(
+          to bottom,
+          $scissors-linear-light,
+          $scissors-linear-dark
+        );
+      }
+    }
+
+    .rock {
+      position: relative;
+
+      @include centerAnimation(moveRock);
+      @include scaleAfter {
+        background: linear-gradient(
+          to bottom,
+          $rock-gradient-light,
+          $rock-gradient-dark
+        );
+      }
+    }
+  }
+}
