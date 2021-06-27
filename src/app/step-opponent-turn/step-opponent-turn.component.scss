@@ -21,9 +21,11 @@
 
   .pick {
     text-align: center;
-    @media (max-width: 350px) {
+
+    @media (max-width: 360px) {
       margin-top: 3rem;
     }
+
     p {
       text-transform: uppercase;
       color: white;

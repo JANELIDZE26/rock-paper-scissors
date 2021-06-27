@@ -1,11 +1,11 @@
 <div class="container">
   <div  class="pick my-pick" [ngSwitch]="myPick">
-    <div [ngClass]="winGame ? 'winner': ''" *ngSwitchCase="'paper'" class="option paper">
+    <div *ngSwitchCase="'paper'" class="option paper">
       <div class="image">
         <img class="img" src="assets/images/icon-paper.svg" alt="paper-icon" />
       </div>
     </div>
-    <div [ngClass]="winGame ? 'winner': ''" *ngSwitchCase="'scissors'" class="option scissors">
+    <div *ngSwitchCase="'scissors'" class="option scissors">
       <div class="image">
         <img
           class="img"
@@ -14,12 +14,12 @@
         />
       </div>
     </div>
-    <div [ngClass]="winGame ? 'winner': ''" *ngSwitchCase="'rock'" class="option rock">
+    <div *ngSwitchCase="'rock'" class="option rock">
       <div class="image">
         <img class="img" src="./assets/images/icon-rock.svg" alt="rock-icon" />
       </div>
     </div>
-    <p class="my-name">You picked</p>
+    <p class="my-name">You</p>
   </div>
   <div class="pick opponent-pick" [ngSwitch]="opponentPick">
     <div *ngSwitchCase="'paper'" class="option paper">
@@ -41,7 +41,7 @@
         <img class="img" src="./assets/images/icon-rock.svg" alt="rock-icon" />
       </div>
     </div>
-    <p class="opponent-name">The opponent picked</p>
+    <p class="opponent-name">The opponent</p>
   </div>
 </div>
 <div class="result" *ngIf="loseGame || winGame">
