@@ -41,13 +41,13 @@
         <img class="img" src="./assets/images/icon-rock.svg" alt="rock-icon" />
       </div>
     </div>
-    <p class="opponent-name">The house picked</p>
+    <p class="opponent-name">The opponent picked</p>
   </div>
 </div>
-<div class="result" *ngIf="lose || winGame">
+<div class="result" *ngIf="loseGame || winGame">
   <div>
     <p class="result-title">
-      {{ lose ? "YOU LOSE" : "YOU WIN" }}
+      {{ loseGame ? "YOU LOSE" : "YOU WIN" }}
     </p>
   </div>
   <div class="button">
@@ -56,8 +56,9 @@
 </div>
 <div
   class="status"
-  *ngIf="(showMatchWinMessage || showDrawMessage) && !winGame"
+  *ngIf="(showMatchWinMessage || showDrawMessage || showMatchLoseMessage) && !winGame && !loseGame"
 >
   <p *ngIf="showMatchWinMessage">Win!</p>
   <p *ngIf="showDrawMessage">Draw!</p>
+  <p *ngIf="showMatchLoseMessage">Lose!</p>
 </div>

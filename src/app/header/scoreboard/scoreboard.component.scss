@@ -19,7 +19,7 @@
     }
   }
 
-  .score {
+  .score-container {
     background: white;
     width: 25%;
     border-radius: 5px;
@@ -33,11 +33,20 @@
       color: $score-text;
       font-size: 1.2rem;
       text-transform: uppercase;
+      text-align: center;
     }
 
     .score {
       font-size: 2.5rem;
       color: $header-outline;
+    }
+    &.opponent-score-container {
+      .score-label {
+        color: $rock-gradient-dark;
+      }
+      .score {
+        color: $rock-gradient-dark;
+      }
     }
   }
 

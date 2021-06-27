@@ -7,7 +7,7 @@ import { CommunicationService } from '../../services/communication.service';
   styleUrls: ['./scoreboard.component.scss'],
 })
 export class ScoreboardComponent implements OnInit {
-  score = this.cms.score;
+  score = this.cms.scores;
   constructor(private cms: CommunicationService) {}
 
   ngOnInit(): void {}

@@ -2,10 +2,17 @@
   <div class="game-title">
     <img src="../../../assets/images/logo.svg" alt="logo" />
   </div>
-  <div class="score">
-    <p class="score-label">Score</p>
+  <div class="score-container my-score-container">
+    <p class="score-label">My Score</p>
     <p class="score">
-      <span *ngIf="score | async as score">{{ score }}</span
+      <span *ngIf="score | async as score">{{ score.myScore }}</span
+      ><span *ngIf="!(score | async)">0</span>
+    </p>
+  </div>
+  <div class="score-container opponent-score-container">
+    <p class="score-label">Opponent Score</p>
+    <p class="score">
+      <span *ngIf="score | async as score">{{ score.opponentScore }}</span
       ><span *ngIf="!(score | async)">0</span>
     </p>
   </div>

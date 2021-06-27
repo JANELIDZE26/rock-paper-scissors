@@ -6,15 +6,15 @@ import { Injectable } from '@angular/core';
 export class LocalStorageService {
   constructor() {}
 
-  save(val: any): void {
-    localStorage.setItem('opponentPick', JSON.stringify(val));
+  save(key: string, val: any): void {
+    localStorage.setItem(key, JSON.stringify(val));
   }
 
-  get(): any {
-    return JSON.parse(localStorage.getItem('opponentPick') as string);
+  get(key: string): any {
+    return JSON.parse(localStorage.getItem(key) as string);
   }
 
-  deleteAll(): void {
-    localStorage.clear();
+  deleteByKey(key: string): void {
+    localStorage.removeItem(key);
   }
 }
