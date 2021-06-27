@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, NavigationStart, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CommunicationService } from '../services/communication.service';
-import { Subscription } from 'rxjs';
 import { LocalStorageService } from '../services/local-storage.service';
+import { host } from '@angular-devkit/build-angular/src/test-utils';
 
 @Component({
   selector: 'app-step-opponent-turn',
   templateUrl: './step-opponent-turn.component.html',
-  styleUrls: ['./step-opponent-turn.component.scss'],
+  styleUrls: ['./step-opponent-turn.component.scss']
 })
 export class StepOpponentTurnComponent implements OnInit {
   myPick: string | undefined;

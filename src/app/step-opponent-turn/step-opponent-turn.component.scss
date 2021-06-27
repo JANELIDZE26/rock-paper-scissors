@@ -2,24 +2,22 @@
 @import "src/styles/abstract/animations";
 @import "src/styles/abstract/mixins";
 
+
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100vw;
+  flex-wrap: wrap;
   padding: 2rem;
   margin-top: 3rem;
   position: relative;
   z-index: 10;
+  gap: 1rem;
 
   @media (min-width: 400px) {
-    justify-content: center;
     gap: 4rem;
   }
 
-  @media (max-width: 350px) {
-    flex-direction: column;
-  }
 
   .pick {
     text-align: center;
@@ -87,8 +85,8 @@
       color: white;
       margin-bottom: 1rem;
 
-      @media (max-width: 350px) {
-        font-size: 4rem;
+      @media (max-width: 400px) {
+        font-size: 3rem;
       }
     }
 

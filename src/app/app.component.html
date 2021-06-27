@@ -1,6 +1,8 @@
 <div class="app">
-  <app-header></app-header>
-  <router-outlet></router-outlet>
+  <app-header style="width: 100%"></app-header>
+  <div>
+    <router-outlet ></router-outlet>
+  </div>
   <router-outlet name="rules"></router-outlet>
   <div class="rules">
     <a [routerLink]="[{ outlets: { rules: ['rules'] } }]" class="rules-link"

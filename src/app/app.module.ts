@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StepChooseComponent } from './step-choose/step-choose.component';
 import { StepOpponentTurnComponent } from './step-opponent-turn/step-opponent-turn.component';
-import { StepResultsComponent } from './step-results/step-results.component';
 import { ScoreboardComponent } from './header/scoreboard/scoreboard.component';
 import { RulesComponent } from './rules/rules.component';
 import { HeaderComponent } from './header/header.component';
@@ -15,7 +14,6 @@ import { HeaderComponent } from './header/header.component';
     AppComponent,
     StepChooseComponent,
     StepOpponentTurnComponent,
-    StepResultsComponent,
     ScoreboardComponent,
     RulesComponent,
     HeaderComponent,

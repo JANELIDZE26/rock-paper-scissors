@@ -2,7 +2,7 @@
 
 .app {
   min-height: 100vh;
-  min-width: 100vw;
+  //min-width: 100vw;
   background: linear-gradient(
     to bottom,
     $background-linear-light 50%,
@@ -40,4 +40,7 @@
       text-decoration: none;
     }
   }
+
+
 }
+
