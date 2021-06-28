@@ -21,7 +21,7 @@ export class StepOpponentTurnComponent implements OnInit {
   showMatchWinMessage = false;
   showMatchLoseMessage = false;
   showDrawMessage = false;
-  matchPoint = 2;
+  matchPoint = 3;
 
   constructor(
     private activatedRoute: ActivatedRoute,
